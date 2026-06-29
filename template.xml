@@ -77,9 +77,47 @@ xmlns:expr='http://www.google.com/2005/gml/expr'>
 
 <h2>أحدث الإضافات</h2>
 
-<b:section id='LatestPosts'
-showaddelement='yes'
-maxwidgets='1'/>
+<div class='grid'>
+
+<b:loop values='data:posts' var='post'>
+
+<article class='movie-card'>
+
+<a expr:href='data:post.url'>
+
+<div class='movie-thumb'>
+
+<img expr:src='data:post.firstImageUrl'/>
+
+<div class='movie-overlay'/>
+
+<div class='movie-info'>
+
+<h3 class='movie-title'>
+
+<data:post.title/>
+
+</h3>
+
+<div class='movie-meta'>
+
+<span>
+<data:post.dateHeader/>
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</a>
+
+</article>
+
+</b:loop>
+
+</div>
 
 </section>
 
