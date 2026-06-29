@@ -1,0 +1,23 @@
+<section class="series-page">
+
+<div class="series-cover">
+
+<img expr:src='data:post.firstImageUrl'/>
+
+</div>
+
+<div class="series-info">
+
+<h1>
+
+<data:post.title/>
+
+</h1>
+
+<div id="seriesMeta">
+
+</div>
+
+</div>
+
+</section>
