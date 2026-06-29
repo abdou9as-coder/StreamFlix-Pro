@@ -20,7 +20,137 @@ xmlns:expr='http://www.google.com/2005/gml/expr'>
 </head>
 
 <body>
+  <b:section id='ThemeSettings'
+           maxwidgets='1'
+           showaddelement='yes'/>
 
+  
+<header class='sf-header'>
+
+<div class='container navbar'>
+
+<a class='logo'
+expr:href='data:blog.homepageUrl'>
+
+<data:blog.title/>
+
+</a>
+
+<nav>
+
+<ul class='menu'>
+
+<li>
+
+<a expr:href='data:blog.homepageUrl'>
+
+الرئيسية
+
+</a>
+
+</li>
+
+<li>
+
+<a href='/search/label/مسلسلات'>
+
+المسلسلات
+
+</a>
+
+</li>
+
+<li>
+
+<a href='/search/label/أفلام'>
+
+الأفلام
+
+</a>
+
+</li>
+
+<li>
+
+<a href='/search/label/أنمي'>
+
+الأنمي
+
+</a>
+
+</li>
+
+</ul>
+
+</nav>
+
+<div class='actions'>
+
+<button id='themeToggle'>
+
+🌙
+
+</button>
+
+<button id='searchButton'>
+
+🔍
+
+</button>
+
+</div>
+
+</div>
+
+</header>
+
+<section class='hero'>
+
+<div class='container'>
+
+<b:section id='HeroSlider'
+showaddelement='yes'
+maxwidgets='1'/>
+
+</div>
+
+</section>
+
+<section class='container'>
+
+<h2>
+
+أحدث المسلسلات
+
+</h2>
+
+<div class='grid'>
+
+<b:loop values='data:posts'
+var='post'>
+
+<article class='movie-card'>
+
+<a expr:href='data:post.url'>
+
+<img expr:src='data:post.firstImageUrl'/>
+
+<h3>
+
+<data:post.title/>
+
+</h3>
+
+</a>
+
+</article>
+
+</b:loop>
+
+</div>
+
+</section>
+    
 <header class='header'>
 
 <div class='container navbar'>
