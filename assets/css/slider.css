@@ -1,0 +1,50 @@
+.hero{
+
+height:520px;
+
+display:flex;
+
+align-items:center;
+
+background:linear-gradient(to left,#000 25%,transparent),
+url('../images/hero.jpg') center/cover;
+
+}
+
+.hero-content{
+
+max-width:520px;
+
+}
+
+.hero h2{
+
+font-size:48px;
+
+margin-bottom:15px;
+
+}
+
+.hero p{
+
+line-height:1.9;
+
+opacity:.8;
+
+margin-bottom:20px;
+
+}
+
+.watch-btn{
+
+display:inline-block;
+
+padding:14px 28px;
+
+background:#E50914;
+
+border-radius:10px;
+
+font-weight:bold;
+
+}
