@@ -1,0 +1,46 @@
+<section class='sf-player'>
+
+<div class='player-wrapper'>
+
+<video
+id='streamflixPlayer'
+class='video-js'
+controls
+playsinline
+preload='metadata'
+poster=''>
+
+<source id='videoSource'
+src=''
+type='video/mp4'/>
+
+</video>
+
+</div>
+
+<div class='server-list'>
+
+<button class='server active'
+data-type='mp4'>
+
+Server 1
+
+</button>
+
+<button class='server'
+data-type='m3u8'>
+
+Server 2
+
+</button>
+
+<button class='server'
+data-type='iframe'>
+
+Server 3
+
+</button>
+
+</div>
+
+</section>
