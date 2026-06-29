@@ -9,13 +9,12 @@ xmlns:expr='http://www.google.com/2005/gml/expr'>
 <head>
 
 <meta charset='UTF-8'/>
-
 <meta content='width=device-width,initial-scale=1' name='viewport'/>
 
-<title><data:blog.title/></title>
+<title><data:blog.pageTitle/></title>
 
 <b:skin><![CDATA[
-/* سيتم استبدال هذا لاحقاً */
+/* سيتم نقل جميع ملفات CSS هنا لاحقاً */
 ]]></b:skin>
 
 </head>
@@ -23,18 +22,89 @@ xmlns:expr='http://www.google.com/2005/gml/expr'>
 <body>
 
 <header class='header'>
-<div class='container'>
-<h1><data:blog.title/></h1>
-<nav id='main-menu'></nav>
+
+<div class='container navbar'>
+
+<a class='logo' expr:href='data:blog.homepageUrl'>
+<data:blog.title/>
+</a>
+
+<ul class='menu'>
+
+<li><a expr:href='data:blog.homepageUrl'>الرئيسية</a></li>
+
+<li><a href='/search/label/مسلسلات'>المسلسلات</a></li>
+
+<li><a href='/search/label/أفلام'>الأفلام</a></li>
+
+<li><a href='/search/label/أنمي'>الأنمي</a></li>
+
+</ul>
+
+<div class='actions'>
+
+<button id='themeToggle' class='icon-btn'>🌙</button>
+
+<button class='icon-btn'>🔍</button>
+
 </div>
+
+</div>
+
 </header>
 
-<main>
-<b:section id='main' showaddelement='yes'/>
-</main>
+<section class='hero'>
+
+<div class='container hero-content'>
+
+<h2>شاهد أحدث المسلسلات</h2>
+
+<p>
+أفضل منصة مبنية على بلوجر لمشاهدة المسلسلات والأفلام.
+</p>
+
+<a class='watch-btn' href='#latest'>
+
+ابدأ المشاهدة
+
+</a>
+
+</div>
+
+</section>
+
+<section id='latest' class='container'>
+
+<h2>أحدث الإضافات</h2>
+
+<b:section id='LatestPosts'
+showaddelement='yes'
+maxwidgets='1'/>
+
+</section>
+
+<section class='container'>
+
+<h2>الأكثر مشاهدة</h2>
+
+<b:section id='Popular'
+showaddelement='yes'
+maxwidgets='1'/>
+
+</section>
 
 <footer>
+
+<div class='container'>
+
+<p>
+
 © <data:blog.title/>
+
+</p>
+
+</div>
+
 </footer>
 
 </body>
