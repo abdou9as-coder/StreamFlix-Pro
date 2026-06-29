@@ -1,0 +1,37 @@
+.sf-player{
+margin:40px 0;
+}
+
+.player-wrapper{
+background:#000;
+border-radius:16px;
+overflow:hidden;
+}
+
+.player-wrapper video{
+display:block;
+width:100%;
+aspect-ratio:16/9;
+background:#000;
+}
+
+.server-list{
+display:flex;
+gap:12px;
+margin-top:18px;
+flex-wrap:wrap;
+}
+
+.server{
+padding:12px 20px;
+border:none;
+border-radius:10px;
+background:#222;
+color:#fff;
+cursor:pointer;
+transition:.3s;
+}
+
+.server.active{
+background:#E50914;
+}
